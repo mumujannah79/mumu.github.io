@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mubashsharah Bil Jannah Mumu — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F3EFE3;
+    --ink:#1B2A2A;
+    --rule:#D8D0BC;
+    --mustard:#B9862F;
+    --teal:#3D6B66;
+    --muted:#6B6455;
+    --card:#FBF9F3;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--teal);}
+  .wrap{
+    max-width:1080px;
+    margin:0 auto;
+    padding:0 32px;
+  }
+
+  /* Masthead */
+  header.masthead{
+    border-bottom:2px solid var(--ink);
+    padding:56px 0 28px;
+  }
+  header.masthead .wrap{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    flex-wrap:wrap;
+    gap:16px;
+  }
+  .name{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:clamp(2.2rem, 5vw, 3.4rem);
+    letter-spacing:-0.01em;
+    margin:0;
+  }
+  .role{
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-weight:400;
+    font-size:1.1rem;
+    color:var(--teal);
+    margin:6px 0 0;
+  }
+  .contact{
+    font-size:0.92rem;
+    color:var(--muted);
+    text-align:right;
+  }
+  .contact a{ text-decoration:none; border-bottom:1px solid var(--rule); }
+
+  /* Layout */
+  main{
+    display:grid;
+    grid-template-columns:240px 1fr;
+    gap:56px;
+    padding:48px 0 80px;
+  }
+  @media (max-width: 760px){
+    main{ grid-template-columns:1fr; gap:40px; }
+  }
+
+  aside{
+    position:sticky;
+    top:32px;
+    align-self:start;
+  }
+  aside h2, section h2{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:1.05rem;
+    margin:0 0 14px;
+    padding-bottom:8px;
+    border-bottom:1px solid var(--rule);
+  }
+  aside .block{ margin-bottom:36px; }
+  aside ul{ list-style:none; margin:0; padding:0; }
+  aside ul li{
+    padding:8px 0;
+    border-bottom:1px dotted var(--rule);
+    font-size:0.95rem;
+  }
+  aside ul li:last-child{ border-bottom:none; }
+
+  section{ margin-bottom:52px; }
+  section:last-child{ margin-bottom:0; }
+
+  .lede{
+    font-family:'Fraunces', serif;
+    font-size:1.25rem;
+    font-weight:400;
+    line-height:1.55;
+    max-width:62ch;
+    margin:0;
+  }
+
+  .entry{
+    display:grid;
+    grid-template-columns:200px 1fr;
+    gap:20px;
+    padding:20px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .entry:first-of-type{ padding-top:4px; }
+  .entry:last-child{ border-bottom:none; }
+  @media (max-width:600px){
+    .entry{ grid-template-columns:1fr; gap:6px; }
+  }
+  .entry .org{
+    font-size:0.92rem;
+    color:var(--muted);
+  }
+  .entry .title{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:1.15rem;
+    margin:0 0 4px;
+  }
+  .entry .place{
+    font-size:0.92rem;
+    color:var(--teal);
+  }
+
+  .cert-list{
+    margin:0;
+    padding:0;
+    list-style:none;
+    display:grid;
+    gap:14px;
+  }
+  .cert-list li{
+    background:var(--card);
+    border:1px solid var(--rule);
+    padding:14px 18px;
+    font-size:0.95rem;
+  }
+  .cert-list li strong{ font-weight:600; }
+
+  footer{
+    border-top:1px solid var(--rule);
+    padding:28px 0 48px;
+    font-size:0.85rem;
+    color:var(--muted);
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div>
+      <p class="name">Mubashsharah Bil Jannah Mumu</p>
+      <p class="role">Educator &amp; Writer — Dhaka, Bangladesh</p>
+    </div>
+    <div class="contact">
+      <div><a href="mailto:mumujannah79@gmail.com">mumujannah79@gmail.com</a></div>
+      <div>Dhaka, Bangladesh</div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <aside>
+    <div class="block">
+      <h2>Skills</h2>
+      <ul>
+        <li>Analyzing ability</li>
+        <li>Time management</li>
+        <li>Public speaking</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Education</h2>
+      <ul>
+        <li>M.Ed, Educational Psychology — IER, University of Dhaka <span style="color:var(--teal);">(in progress)</span></li>
+        <li>Bachelor of Education — IER, University of Dhaka</li>
+        <li>HSC in Science — Shaheed Bir Uttam L. Anwar Girls College, Dhaka</li>
+        <li>SSC in Science — BAF Shaheen College, Dhaka</li>
+      </ul>
+    </div>
+  </aside>
+
+  <div>
+    <section id="about">
+      <h2>About</h2>
+      <p class="lede">A dedicated and enthusiastic individual with strong communication and interpersonal skills, and a fast learner with a record of success in both team and independent settings. My work combines analytical thinking with a lasting commitment to fostering educational growth.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div>
+          <div class="org">BacBon Limited</div>
+          <div class="place">Japan</div>
+        </div>
+        <div>
+          <p class="title">Online English Instructor</p>
+          <p style="margin:0;">Taught English to learners in an online setting, adapting lessons to individual pace and proficiency.</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div>
+          <div class="org">10 Minute School</div>
+          <div class="place">Dhaka, Bangladesh</div>
+        </div>
+        <div>
+          <p class="title">Core Content Writer</p>
+          <p style="margin:0;">Developed educational content for one of Bangladesh's leading edtech platforms.</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div>
+          <div class="org">Roar Media</div>
+          <div class="place">Dhaka, Bangladesh</div>
+        </div>
+        <div>
+          <p class="title">Feature Writer</p>
+          <p style="margin:0;">Wrote long-form feature articles on culture, society, and current affairs.</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div>
+          <div class="org">Saifur's, Farmgate</div>
+          <div class="place">Dhaka</div>
+        </div>
+        <div>
+          <p class="title">English Instructor</p>
+          <p style="margin:0;">Delivered English language instruction to students preparing for academic and professional goals.</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div>
+          <div class="org">British Council</div>
+          <div class="place">Active Citizen Leadership Training (ACYLT), Dhaka</div>
+        </div>
+        <div>
+          <p class="title">Trainee</p>
+          <p style="margin:0;">Completed leadership training focused on civic engagement and community action.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications &amp; Involvement</h2>
+      <ul class="cert-list">
+        <li><strong>International Press</strong> — DUNMUN</li>
+        <li><strong>Delegate</strong> — International Youth Flash, Nepal</li>
+        <li><strong>Organizer</strong> — IER National Conference</li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    Built by Mumu — reach out at <a href="mailto:mumujannah79@gmail.com">mumujannah79@gmail.com</a>
+  </div>
+</footer>
+
+</body>
+</html>
